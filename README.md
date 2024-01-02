@@ -1,26 +1,35 @@
 # REST API with Express and MongoDB
 This template provides a minimal setup to connect to MongoDB Atlas using ExpressJS with credentials.
 
-```pnpm create vite ./ --template react-ts```
+Schema:
 
-To connect to MongoDB:
+## Ukol
+
+__Cílem tohoto úkolu je implementovat CRUD operace v databázi__
+
+### První varianta - Blog (easy mode)
+- vytvoř schéma pro články a autory
+- implementuj **CRUD** operace pro články i autory
+
+## Project setup
+
+- ```pnpm create vite ./ --template react-ts```
+
+### Mongo DB connection
+- First create Configuration file holding Atlas connection string details.
 1. Create local *.env*:
 
 - ```ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net/myFirstDatabase?retryWrites=
 PORT=5050```
 
-
 2.  Replace the *username* and *password* with the actual credentials 
-3. ``npm i``
-4. ``npm run dev``
+3. save
 
-## Homework
+### Run the project locally
 
-__Cílem tohoto úkolu je implementovat CRUD operace v databázi__
+1. ``npm i``
 
-## První varianta - Blog (easy mode)
-- vytvoř schéma pro články a autory
-- implementuj **CRUD** operace pro články i autory
+2. ``npm run dev``
 
 ## Notes
 
