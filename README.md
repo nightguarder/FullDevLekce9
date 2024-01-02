@@ -29,7 +29,7 @@ PORT=5050
 ```
 
 2.  Replace the *username* and *password* with the actual credentials 
-3. save
+3. remove comments // and save
 
 ### Run the project locally
 
