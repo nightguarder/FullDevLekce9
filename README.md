@@ -22,8 +22,11 @@ __Cílem tohoto úkolu je implementovat CRUD operace v databázi__
 - First create Configuration file holding Atlas connection string details.
 1. Create local *.env*:
 
-- ```ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net/myFirstDatabase?retryWrites=
-PORT=5050```
+
+```javascript
+ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net/myFirstDatabase?retryWrites=
+PORT=5050
+```
 
 2.  Replace the *username* and *password* with the actual credentials 
 3. save

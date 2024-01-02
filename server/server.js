@@ -1,5 +1,6 @@
 //Dependecies
 import express from 'express'
+import dotenv from 'dotenv'
 
 //Express setup
 const app = express();
