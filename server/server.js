@@ -1,13 +1,13 @@
 //The main entry point for the Express server.
 //Dependecies
 import express from 'express'
-import "./loadenvironment.mjs";
+import "./loadenvironment.js";
 import cors from 'cors'
-import mongodb from 'mongodb'
-import dbcon from './db/dbconnection'
+import {connectToServer} from './db/dbconnection.js'
+
 //Express setup
-app.use(cors());
 const app = express();
+app.use(cors());
 app.use(express.json())
 
 //dotenv config
@@ -24,17 +24,14 @@ app.use((err, _req, res, next) => {
     res.status(500).send("Uh oh! An unexpected error occured.")
   })
   
-//Routing
-app.use(require("./routes/record"));
-
-//Database connection
-dbcon.connectToServer(function (err) {
+//Connect to MongoDB
+connectToServer(function (err) {
     if (err) {
-      console.error(err);
-      process.exit();
+        console.error(err);
+        process.exit();
     }
+    // Start the Express.js server
+    app.listen(PORT, HOST, () => {
+        console.log(`Server is running at http://${HOST}:${PORT}`);
+    })
 });
-//Server is running
-app.listen(PORT, HOST, () => {
-    console.log(`Server is running at http://${HOST}:${PORT}`);
-  });

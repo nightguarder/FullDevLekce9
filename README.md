@@ -22,14 +22,22 @@ __Cílem tohoto úkolu je implementovat CRUD operace v databázi__
 - First create Configuration file holding Atlas connection string details.
 1. Create local *.env*:
 
-
 ```javascript
-ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net/myFirstDatabase?retryWrites=
 PORT=5050
+HOST=localhost
+MONGO_USER=username
+MONGO_PWD=securepwd
+MONGO_DATABASE=myfirstDatabase
 ```
 
-2.  Replace the *username* and *password* with the actual credentials 
-3. remove comments // and save
+2.  Replace the *MONGO_USER* and *<password>* with the actual credentials from [Atlas Database Dashboard](https://cloud.mongodb.com/v2)
+
+3. save .env and continue
+4. If you have configured everything correctly you should get after starting the server:
+__``You successfully connected to MongoDB!``__
+
+- Troubleshooting:
+[MongoserverErrorAuth](https://dev.to/shafia/how-to-fix-the-error-mongoservererror-bad-auth-authentication-failed-5b58)
 
 ### Run the project locally
 
