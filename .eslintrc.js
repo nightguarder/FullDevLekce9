@@ -7,6 +7,9 @@ module.exports = {
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended"
     ],
+    "eslintIgnore": [
+      "coverage", "dist", "node_modules"
+    ],
     "overrides": [
         {
             "env": {

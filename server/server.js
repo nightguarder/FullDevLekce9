@@ -3,7 +3,6 @@
 import express from 'express'
 import "./loadenvironment.js";
 import cors from 'cors'
-import {connectToServer} from './db/dbconnection.js'
 
 //Express setup
 const app = express();
@@ -24,14 +23,9 @@ app.use((err, _req, res, next) => {
     res.status(500).send("Uh oh! An unexpected error occured.")
   })
   
-//Connect to MongoDB
-connectToServer(function (err) {
-    if (err) {
-        console.error(err);
-        process.exit();
-    }
-    // Start the Express.js server
-    app.listen(PORT, HOST, () => {
-        console.log(`Server is running at http://${HOST}:${PORT}`);
-    })
-});
+
+// Start the Express.js server
+app.listen(PORT, HOST, () => {
+    console.log(`Server is running at http://${HOST}:${PORT}`);
+})
+
