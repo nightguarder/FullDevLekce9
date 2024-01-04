@@ -14,7 +14,9 @@ __Cílem tohoto úkolu je implementovat CRUD operace v databázi__
 
 ## Project setup
 
-- Project mostly based on this tutorial: [REST API with Express, Node and MongoDB](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial)
+- Project mostly based on this tutorial: [REST API with Express, Node and MongoDB](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial) 
+and
+[CRUD tutorial](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/)
 
 
 ## Mongo DB connection
