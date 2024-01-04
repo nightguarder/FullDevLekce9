@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This template provides a minimal setup to connect to MongoDB Atlas using ExpressJS with credentials.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "server": "nodemon ./server/server.js",
