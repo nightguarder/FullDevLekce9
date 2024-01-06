@@ -1,7 +1,5 @@
-# REST API with Express and MongoDB
-This template provides a minimal setup to connect to MongoDB Atlas using ExpressJS with credentials.
-
-![Schema](./public/schema.png)
+# Neon tech branch
+- Minimal ExpressJS typescript app to connect to Postgres Neon tech db.
 
 ## Ukol
 
@@ -9,8 +7,13 @@ __Cílem tohoto úkolu je implementovat CRUD operace v databázi__
 
 ### První varianta - Blog (easy mode)
 
-- vytvoř schéma pro články a autory
-- implementuj **CRUD** operace pro články i autory
+- [x] vytvoř schéma pro články a autory
+- [x] implementuj **CRUD** operace pro články i autory
+
+# Main branch
+- This template provides a minimal setup to connect to MongoDB Atlas using ExpressJS with credentials.
+
+![Schema](./public/schema.png)
 
 ## Project setup
 
