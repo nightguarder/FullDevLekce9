@@ -1,6 +1,6 @@
 //importing modules
 import  {Schema, model} from 'mongoose'
-import Joi from 'joi'
+import Joi, { date } from 'joi'
 
 //Joi = Schema description language
 //Query Builder for Blog Posts
@@ -9,8 +9,9 @@ export const PostschemaValidate = Joi.object({
     description: Joi.string().required(),
     author: Joi.string().required(),
     published: Joi.boolean().required(),
-    //TODO: add Date
-
+    createdAt:  Joi.date()
+    .iso()
+    .options({convert:true})//valid dates will be converted
 })
 
 //creating an Interface 
@@ -19,7 +20,7 @@ interface IPosts {
     description: string,
     author: string,
     published: boolean,
-
+    createdAt: Date,
 }
 
 //Postschema
@@ -41,8 +42,15 @@ const postSchema = new Schema<IPosts>({
 
     published: {
         type: Boolean,
-        default: false
+        default: false,
+        required: false
     },
+
+    createdAt:{
+        type: Date,
+        default: Date.now,
+        required: false
+    }
     //Add more...
     
 })
