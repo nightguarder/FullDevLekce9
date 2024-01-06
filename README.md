@@ -1,9 +1,13 @@
-# Mongodb branch
+
+# REST API with Express and MongoDB
+- This template provides a minimal setup to connect to MongoDB Atlas using ExpressJS with credentials.
 
 - Minimal ExpressJS Typescript app to connect to MongoDB Atlas db.
 - Using [Mongoose](https://mongoosejs.com/) and [Joi] (https://joi.dev/api/?v=17.9.1#dateiso) to get familiar with CRUD and ORM
 
+
 ![result](./public/mongo_db_posts.png)
+
 ## Ukol
 
 __Cílem tohoto úkolu je implementovat CRUD operace v databázi__
