@@ -1,16 +1,7 @@
 # REST API with Express and MongoDB
-This template provides a minimal setup to connect to MongoDB Atlas using ExpressJS with credentials.
+- This template provides a minimal setup to connect to MongoDB Atlas using ExpressJS with credentials.
 
 ![Schema](./public/schema.png)
-
-## Ukol
-
-__Cílem tohoto úkolu je implementovat CRUD operace v databázi__
-
-### První varianta - Blog (easy mode)
-
-- vytvoř schéma pro články a autory
-- implementuj **CRUD** operace pro články i autory
 
 ## Project setup
 
@@ -19,7 +10,7 @@ and
 [CRUD tutorial](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/)
 
 
-## Mongo DB connection
+### Mongo DB connection
 
 - First create Configuration file holding Atlas connection string details.
 1. Create local *.env*:
