@@ -1,7 +1,7 @@
 import { Post } from "../api/postSchema";
 
 //Module for handling all CRUD operations
-export class postService {
+export class CRUDService {
     //*CREATE*
     async createPost(data:any){
         try{
@@ -61,4 +61,4 @@ export class postService {
         }
     }
 }
-export const CRUDService = new postService()
+export const postServices = new CRUDService()

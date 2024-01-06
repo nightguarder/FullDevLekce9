@@ -3,6 +3,7 @@ import  {Schema, model} from 'mongoose'
 import Joi from 'joi'
 
 //Joi = Schema description language
+//Query Builder for Blog Posts
 export const PostschemaValidate = Joi.object({
     title: Joi.string().required(),
     description: Joi.string().required(),
