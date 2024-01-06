@@ -3,6 +3,7 @@
 - Minimal ExpressJS Typescript app to connect to MongoDB Atlas db.
 - Using [Mongoose](https://mongoosejs.com/) and [Joi] (https://joi.dev/api/?v=17.9.1#dateiso) to get familiar with CRUD and ORM
 
+![result](./public/mongo_db_posts.png)
 ## Ukol
 
 __Cílem tohoto úkolu je implementovat CRUD operace v databázi__
@@ -21,7 +22,7 @@ __Project mostly based on this tutorial:__
 - [MongoDB setup](https://medium.com/@rachealkuranchie/how-to-build-a-crud-api-with-express-js-and-typescript-21c7c66e5296)
 
 
-## Mongo DB connection
+### Mongo DB connection
 
 - First create Configuration file holding Atlas connection string details.
 1. Create local *.env*:
@@ -52,6 +53,7 @@ __``You successfully connected to MongoDB!``__
 3. ``pnpm run build``
 
 4. ``pnpm link --global``
+
 
 ## Notes
 
