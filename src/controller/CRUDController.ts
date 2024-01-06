@@ -1,4 +1,4 @@
-import { postServices } from "../services/CRUDService";
+import { PostServices } from "../services/CRUDService";
 import { Request,Response } from "express";
 import { PostschemaValidate } from "../api/postSchema";
 
@@ -21,7 +21,7 @@ class CRUDController {
 
         }
         //Finally call the postService to create it
-        const post = await postServices.createPost(value);
+        const post = await PostServices.createPost(value);
         res.status(201).send(post)          
         }catch(error){
             console.error("Error when adding post.",error);
@@ -31,7 +31,7 @@ class CRUDController {
    //*READ*
    getAPost = async (req:Request,res:Response)=>{
     try {
-        const allPosts = await postServices.getAllPost();
+        const allPosts = await PostServices.getAllPost();
         res.send(allPosts)
     } catch (error) {
         console.error("Unknown error.",error);
@@ -42,7 +42,7 @@ class CRUDController {
    getPost = async (req:Request,res:Response)=>{
     try {
         const id = req.params.id;
-        const post = await postServices.getPost(id);
+        const post = await PostServices.getPost(id);
         res.send(post);
     } catch (error) {
         console.error("Unknown error.",error);
@@ -53,7 +53,7 @@ class CRUDController {
     updatePost = async (req:Request,res:Response)=>{
         try {
             const id = req.params.id
-            const post = await postServices.updatePost(id, req.body)  
+            const post = await PostServices.updatePost(id, req.body)  
             res.send(post);
         } catch (error) {
             console.error("Unknown error.",error);
@@ -64,7 +64,7 @@ class CRUDController {
     deletePost = async (req: Request, res: Response) => {
         try {
             const id = req.params.id
-        await postServices.deletePost(id)
+        await PostServices.deletePost(id)
         res.send('post deleted')
         } catch (error) {
             console.error("Unknown error.",error);
@@ -72,4 +72,4 @@ class CRUDController {
         }
     }
 }
-export const postController = new CRUDController();
+export const PostController = new CRUDController();

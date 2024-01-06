@@ -61,4 +61,4 @@ export class CRUDService {
         }
     }
 }
-export const postServices = new CRUDService()
+export const PostServices = new CRUDService()
