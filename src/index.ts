@@ -5,7 +5,7 @@ import cors from 'cors';
 //Modules
 import * as middlewares from './middlewares';
 import { db } from './config/atlasdb';
-import api from './api';
+import api from './api/api';
 import MessageResponse from './interfaces/MessageResponse';
 
 require('dotenv').config();
