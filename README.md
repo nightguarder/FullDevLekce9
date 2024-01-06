@@ -1,5 +1,5 @@
-# Neon tech branch
-- Minimal ExpressJS typescript app to connect to Postgres Neon tech db.
+# Mongodb branch
+- Minimal ExpressJS Typescript app to connect to MongoDB Atlas db.
 
 ## Ukol
 
@@ -9,11 +9,6 @@ __Cílem tohoto úkolu je implementovat CRUD operace v databázi__
 
 - [x] vytvoř schéma pro články a autory
 - [x] implementuj **CRUD** operace pro články i autory
-
-# Main branch
-- This template provides a minimal setup to connect to MongoDB Atlas using ExpressJS with credentials.
-
-![Schema](./public/schema.png)
 
 ## Project setup
 
