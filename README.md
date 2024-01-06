@@ -1,5 +1,7 @@
 # Mongodb branch
+
 - Minimal ExpressJS Typescript app to connect to MongoDB Atlas db.
+- Using [Mongoose](https://mongoosejs.com/) and [Joi] (https://joi.dev/api/?v=17.9.1#dateiso) to get familiar with CRUD and ORM
 
 ## Ukol
 
@@ -57,4 +59,5 @@ __``You successfully connected to MongoDB!``__
 - ```pnpm create vite ./ --template react-ts```
 
 ## Documentation
-[Joi docs](https://joi.dev/api/?v=17.9.1#dateiso)
+- [Joi docs](https://joi.dev/api/?v=17.9.1#dateiso)
+- [Mongoose](https://mongoosejs.com/)
