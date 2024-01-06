@@ -19,3 +19,5 @@ router.put('/:id', PostController.updatePost)
 
 //delete
 router.delete('/:id', PostController.deletePost)
+
+export default router;

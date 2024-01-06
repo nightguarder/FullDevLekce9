@@ -4,7 +4,7 @@ import cors from 'cors';
 
 //Modules
 import { db } from './config/atlasdb';
-import api from './api/api';
+import { router } from './routes/routes';
 
 require('dotenv').config();
 //Express config
@@ -33,7 +33,7 @@ db.then(()=>{
   });
 });
 
-app.use('/api/v1/posts', api);
+app.use('/api/v1/posts', router);
 
 
 export default app;
