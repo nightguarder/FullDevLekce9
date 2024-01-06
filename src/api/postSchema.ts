@@ -9,6 +9,7 @@ export const PostschemaValidate = Joi.object({
     description: Joi.string().required(),
     author: Joi.string().required(),
     published: Joi.boolean().required(),
+    //TODO: add Date
 
 })
 
@@ -25,7 +26,7 @@ interface IPosts {
 const postSchema = new Schema<IPosts>({
     title: {
         type: String,
-        
+        required:true
     },
 
     description: {
@@ -40,11 +41,10 @@ const postSchema = new Schema<IPosts>({
 
     published: {
         type: Boolean,
-        required: true,
         default: false
     },
     //Add more...
     
 })
 
- export const Post = model<IPosts>('Post', postSchema )
+ export const Post = model<IPosts>('Posts', postSchema )
